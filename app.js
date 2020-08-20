@@ -1,5 +1,3 @@
-// console.log(Math.round(Math.random()*15)+1);
-
 let names = ["Laura",
             "Julien",
             "Clément",
@@ -15,32 +13,36 @@ let names = ["Laura",
             "Zohra",
             "Jérome",
             "Alvyn",
-            "Quentin"];
+            "Quentin"],
+    places = document.querySelectorAll(".place");
 
 
-// let random = Math.round(Math.random() * names.length);
-// console.log(names[random]);
+function shuffle(tableau) {
+  var l = tableau.length,
+      tmp;
 
-// let L = names.length;
-// let R = (Math.round(Math.random()*16));
+  
+  while (l--) {
+    //On détermine un nombre random basé sur la longueur de names (soit 16)//
+      let r = Math.floor(Math.random() * tableau.length);
+    //On stocke la réponse choisie au hasard dans une variable temporaire //
+      tmp = tableau [r];
+    //On dit que R, en fait c'est L, donc que le nombre random prend la place de l'index//
+      tableau [r] = tableau [l];
+    //On dit que L c'est tmp DONC que L c'est R en fait. Donc si R = L et que L = R alors c'est mélangé//
+      tableau [l] = tmp;
+    }
+
+  return tableau;
+} 
 
 
-
-
-for(let i = 0; i < names.length; i++){
-    const r = Math.floor(Math.random() * names.length);
-    let place = document.getElementById(`place-${i}`)
-    // const temp = names[i];
-
-
-    console.log(`Je vais placer la personne à l'index ${r} sur la div ${i+1}`);
-
-
-    console.log(names);
-    names.splice(r, 1);
-
-    // names[i] = names[r];
-    // names[r] = temp;
-
+function dispatchNames (tableau) {
+  shuffle(tableau);
+  let i = 0,
+      j = names.length;
+  
+  for (; i < j; i++) {
+    places[i].innerHTML = names[i];
   }
-
+}

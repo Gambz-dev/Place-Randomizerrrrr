@@ -1,3 +1,112 @@
-body {
-    background-color: blue;
+html{
+    height: 100%;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.entree{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    border: solid black;
+    border-width: 40px 2px;
+}
+
+
+
+
+.bureau1{
+    position: absolute;
+    top: 22%;
+    left: 0%;
+    border: solid pink;
+    border-width: 50px 100px;
+}
+
+.bureau2{
+    position: absolute;
+    top: 54%;
+    left: 0%;
+    border: solid pink;
+    border-width: 50px 100px;
+}
+
+.bureau3{
+    position: absolute;
+    bottom: 0%;
+    left: 25%;
+    border: solid pink;
+    border-width: 100px 50px;
+}
+
+.bureau4{
+    position: absolute;
+    bottom: 0%;
+    left: 60%;
+    border: solid pink;
+    border-width: 100px 50px;
+}
+
+.bureau5{
+    position: absolute;
+    top: 54%;
+    left: 85%;
+    border: solid pink;
+    border-width: 50px 100px;
+}
+
+.bureau6{
+    position: absolute;
+    top: 22%;
+    left: 85%;
+    border: solid pink;
+    border-width: 50px 100px;
+}
+
+.bureau7{
+    position: absolute;
+    top: 54%;
+    left: 40%;
+    border: solid pink;
+    border-width: 50px 100px;
+}
+
+.bureau8{
+    position: absolute;
+    top: 22%;
+    left: 40%;
+    border: solid pink;
+    border-width: 50px 100px;
+}
+
+.myButton {
+    position: absolute;
+    left: 45%;
+	background-color:#44c767;
+	border-radius:28px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+.myButton:hover {
+	background-color:#5cbf2a;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+#desktop {
+    border-radius: 30px;
 }
